@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>show-case</artifactId>
+        <groupId>tom-test-case</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+
+    <artifactId>hello-maven</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>Maven Hello World Project</name>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jdk.version>1.7</jdk.version>
+
+        <servlet.version>3.0.1</servlet.version>
+        <spring.version>4.0.0.RELEASE</spring.version>
+        <aspectj.version>1.7.2</aspectj.version>
+
+        <asm.version>4.0</asm.version>
+        <cglib.version>3.0</cglib.version>
+
+        <jackson-2-version>2.2.3</jackson-2-version>
+
+        <jetty.version>8.1.8.v20121106</jetty.version>
+
+        <junit.version>4.11</junit.version>
+
+    </properties>
+     <dependencies>
+       <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>${junit.version}</version>
+          <scope>test</scope>
+       </dependency>
+     </dependencies>
+
+</project>
