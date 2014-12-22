@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/hello-maven/hello-maven.iml" filepath="$PROJECT_DIR$/hello-maven/hello-maven.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hello-world.iml" filepath="$PROJECT_DIR$/hello-world.iml" />
+      <module fileurl="file://$PROJECT_DIR$/show-case.iml" filepath="$PROJECT_DIR$/show-case.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello-maven/tom-showcase.iml" filepath="$PROJECT_DIR$/hello-maven/tom-showcase.iml" />
     </modules>
   </component>
 </project>
-

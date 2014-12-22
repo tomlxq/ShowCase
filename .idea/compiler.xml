@@ -22,9 +22,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="hello-world" />
+        <module name="tom-showcase" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hello-maven" target="1.7" />
+      <module name="hello-world" target="1.7" />
+      <module name="tom-showcase" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
-
