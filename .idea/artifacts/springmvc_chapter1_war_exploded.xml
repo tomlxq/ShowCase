@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="springmvc-chapter1:war exploded">
+    <output-path>$PROJECT_DIR$/springmvc-chapter1/target/springmvc-chapter1</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="springmvc-chapter1" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="F:\data\wwwroot\ShowCase\springmvc-chapter1\target/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="springmvc-chapter1/web/Web" />
+    </root>
+  </artifact>
+</component>

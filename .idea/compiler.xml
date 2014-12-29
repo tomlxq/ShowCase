@@ -22,12 +22,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="springmvc-chapter1" />
+        <module name="springmvc-chapter2" />
+        <module name="springmvc-chapter4" />
         <module name="tom-showcase" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="hello-maven" target="1.7" />
       <module name="hello-world" target="1.7" />
+      <module name="springmvc-chapter2" target="1.7" />
       <module name="tom-showcase" target="1.7" />
     </bytecodeTargetLevel>
   </component>

@@ -2,22 +2,191 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5b10e00-cd92-46ce-962b-298c8bf83ade" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/show-case.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello-maven/tom-showcase.iml" />
-      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\.idea\libraries\jdk1_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\hello-maven.iml" afterPath="" />
-      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\src\test\HelloWorldTest.java" afterPath="" />
-      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/com.springsource.javax.servlet.jsp.jstl-1.1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/com.springsource.javax.servlet.jsp.jstl-1.1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/com.springsource.org.apache.commons.logging-1.1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/com.springsource.org.apache.commons.logging-1.1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/com.springsource.org.apache.taglibs.standard-1.1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/com.springsource.org.apache.taglibs.standard-1.1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/log4j-1.2.16.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/log4j-1.2.16.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.aop-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.aop-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.asm-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.asm-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.aspects-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.aspects-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.beans-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.beans-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.context-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.context-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.context.support-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.context.support-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.core-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.expression-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.expression-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.instrument-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.instrument-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.instrument.tomcat-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.instrument.tomcat-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.jdbc-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.jdbc-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.jms-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.jms-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.orm-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.orm-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.oxm-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.oxm-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.test-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.test-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.transaction-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.transaction-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.web-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.web-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.web.portlet-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.web.portlet-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.web.servlet-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.web.servlet-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.web.struts-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.web.struts-3.1.1.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/slf4j-api-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/slf4j-api-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/slf4j-log4j12-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/CanCancelRegisterSimpleFormController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/CancelController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/ContextLoaderListener.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/ContextLoaderListener.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/DataBinderAndValidatorTestController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/DataBinderErrorTestController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/DataBinderTestController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/model/DataBinderTestModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/ErrorController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/servlet/ForwardingServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/HelloWorldCacheController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/java/cn/javass/chapter2/web/controller/HelloWorldController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/HelloWorldController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/HelloWorldLastModifiedCacheController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/HelloWorldWithoutReturnModelAndViewController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/InfoFillWizardFormController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter1/src/main/java/cn/javass/chapter1/web/servlet/LoginServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_3_0_alpha_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_1_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_0_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_asm_3_1_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_1_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_0_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_1_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_0_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_3_1_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_1_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_0_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_1_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_0_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_1_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_0_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_3_1_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter1/src/main/java/cn/javass/chapter1/web/servlet/Model2Servlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/MyAbstractCommandController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/support/initializer/MyWebBindingInitializer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/support/editor/PhoneNumberEditor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/model/PhoneNumberModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/model/PhoneNumberModelErrorEditor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/RegisterSimpleFormController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/model/SchoolInfoModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/SuccessController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/UserAndValidatorController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter1/src/main/java/cn/javass/chapter1/javabean/UserBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/UserController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/UserDelegate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/model/UserModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/support/validator/UserModelValidator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/service/UserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/model/UserState.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/model/WorkInfoModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/abstractCommand.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/wizard/baseInfo.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/bindAndValidate/bindError.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/cancel.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/chapter2-servlet.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/chapter4-servlet.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/user/create.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/user2/create.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/user/createAndValidator.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/user/delete.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/user2/delete.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/bindAndValidate/error.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/jsp/hello.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/hello.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/bindAndValidate/input.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/user/list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/user2/list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/java/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter1/src/main/webapp/jsp/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter1/src/main/webapp/model1/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter1/src/main/webapp/model2/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/java/messages.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/resources/messages.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/lib/org.springframework.spring-library-3.1.1.RELEASE.libd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/lib/org.springframework.spring-library-3.1.1.RELEASE.libd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter1/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/register.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/registerAndValidator.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/wizard/schoolInfo.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter1/springmvc-chapter1.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/springmvc-chapter2.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/springmvc-chapter4.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/springmvc_chapter1_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/springmvc_chapter1_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/springmvc_chapter2_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/springmvc_chapter2_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/springmvc_chapter4_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/springmvc_chapter4_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/success.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/bindAndValidate/success.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/wizard/success.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/user/update.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/user2/update.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter1/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/wizard/workInfo.jsp" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\.idea\libraries\Maven__junit_junit_4_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\.idea\libraries\Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\.idea\uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\.idea\workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\hello-world.iml" afterPath="" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\show-case.ipr" afterPath="" />
+      <change type="DELETED" beforePath="F:\data\wwwroot\ShowCase\show-case.iws" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello-maven/pom.xml" afterPath="$PROJECT_DIR$/hello-maven/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/show-case.iml" afterPath="$PROJECT_DIR$/show-case.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\src\main\com\juvenxu\mvnbook\helloworld\HelloWorld.java" afterPath="$PROJECT_DIR$/hello-maven/src/main/java/com/juvenxu/mvnbook/helloworld/HelloWorld.java" />
+      <change type="MOVED" beforePath="F:\data\wwwroot\ShowCase\hello-maven\tom-showcase.iml" afterPath="$PROJECT_DIR$/hello-maven/hello-maven.iml" />
     </list>
     <ignored path="hello-world.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,6 +195,9 @@
     <ignored path="$PROJECT_DIR$/hello-maven/target/" />
     <ignored path="$PROJECT_DIR$/hello-maven/hello-maven/target/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/springmvc-chapter1/target/" />
+    <ignored path="$PROJECT_DIR$/springmvc-chapter2/target/" />
+    <ignored path="$PROJECT_DIR$/springmvc-chapter4/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +217,58 @@
     <favorites_list name="hello-world" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="messages.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/resources/messages.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171">
+              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springmvc-chapter2/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1007">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hello-maven/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="988">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/springmvc-chapter1/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1027027" vertical-offset="0" max-vertical-offset="646">
+              <caret line="3" column="31" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -59,26 +282,44 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/hello-maven/hello-maven/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-chapter1/src/main/webapp/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/springmvc-chapter1/src/main/java/cn/javass/chapter1/web/servlet/Model2Servlet.java" />
+        <option value="$PROJECT_DIR$/springmvc-chapter2/src/main/java/cn/javass/chapter2/web/controller/HelloWorldController.java" />
+        <option value="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/chapter2-servlet.xml" />
+        <option value="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/RegisterSimpleFormController.java" />
+        <option value="$PROJECT_DIR$/springmvc-chapter4/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/HelloWorldCacheController.java" />
+        <option value="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/chapter4-servlet.xml" />
+        <option value="$PROJECT_DIR$/springmvc-chapter4/src/main/resources/messages.properties" />
         <option value="$PROJECT_DIR$/hello-maven/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-chapter2/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc-chapter1/pom.xml" />
       </list>
     </option>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="hello-maven" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
@@ -101,6 +342,12 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="Lifecycle" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -166,14 +413,18 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="ShowCase" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -183,6 +434,48 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ShowCase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShowCase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShowCase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springmvc-chapter4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShowCase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShowCase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springmvc-chapter2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShowCase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShowCase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springmvc-chapter1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -235,13 +528,25 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="LayoutCode.rearrangeEntriesXML" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tom_arch/opensource/spring4-showcase/trunk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springmvc-chapter4" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/hello-maven/src/main/java" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="options.lastSelected" value="File.Encoding" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\data\wwwroot\ShowCase\hello-maven\src" />
+      <recent name="F:\data\wwwroot\ShowCase\springmvc-chapter4\src\main\webapp" />
+      <recent name="F:\data\wwwroot\ShowCase\springmvc-chapter4\src\main\java" />
+      <recent name="F:\data\wwwroot\ShowCase\springmvc-chapter2\src\main\java" />
+      <recent name="F:\data\wwwroot\ShowCase\springmvc-chapter2\src\main\webapp" />
+      <recent name="F:\data\wwwroot\ShowCase\springmvc-chapter1\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\data\wwwroot\ShowCase\hello-maven\src\test" />
@@ -253,7 +558,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Maven.maven">
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -301,6 +606,17 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -390,6 +706,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
@@ -513,13 +834,121 @@
       <envs />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="maven" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat:run" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="true" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/springmvc-chapter4" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.57" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="springmvc-chapter1:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ShowCase" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53856" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="springmvc-chapter1:war" />
+        </option>
+      </method>
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Maven.maven" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
+    </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a5b10e00-cd92-46ce-962b-298c8bf83ade" name="Default" comment="" />
@@ -533,44 +962,70 @@
       <workItem from="1419209590416" duration="932000" />
       <workItem from="1419210548571" duration="9000" />
       <workItem from="1419210559481" duration="3161000" />
-      <workItem from="1419218779038" duration="1712000" />
+      <workItem from="1419218779038" duration="2740000" />
+      <workItem from="1419222799783" duration="335000" />
+      <workItem from="1419237672876" duration="882000" />
+      <workItem from="1419249810507" duration="22000" />
+      <workItem from="1419820068027" duration="15095000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10434000" />
+    <option name="totallyTimeSpent" value="27796000" />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3620321" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4031008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32990867" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20213903" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3652968" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32990867" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25187165" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35989305" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35989305" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07386363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -598,229 +1053,414 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hello-maven/src/README.md">
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter2/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="532">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.5166932" vertical-offset="283" max-vertical-offset="912">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/pom.xml">
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="380">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="209">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/src/README.md">
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/DataBinderAndValidatorTestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="532">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1064" max-vertical-offset="1406">
-          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="380">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/src/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="532">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1064" max-vertical-offset="1406">
-          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="380">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/src/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="532">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="608" max-vertical-offset="722">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="380">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/src/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="532">
-          <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="286" max-vertical-offset="931">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="380">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/src/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="494">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="931">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="380">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/src/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="494">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="931">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="380">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/src/test/java/com/juvenxu/mvnbook/helloworld/HelloWorldTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="1007">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="553" max-vertical-offset="1064">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="511">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="511">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="350" max-vertical-offset="874">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/support/initializer/MyWebBindingInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/support/validator/UserModelValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/support/editor/PhoneNumberEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="741">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/HelloWorldWithoutReturnModelAndViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/HelloWorldController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1812977" vertical-offset="0" max-vertical-offset="524">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/cancel.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="524">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/wizard/workInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/wizard/success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="524">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/wizard/schoolInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.357143" vertical-offset="150" max-vertical-offset="646">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/HelloWorldCacheController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1812977" vertical-offset="0" max-vertical-offset="524">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/hello.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="524">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.1.1.RELEASE/spring-webmvc-3.1.1.RELEASE.jar!/org/springframework/web/servlet/mvc/ServletForwardingController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34131736" vertical-offset="0" max-vertical-offset="1026">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/servlet/ForwardingServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1948718" vertical-offset="0" max-vertical-offset="390">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7055703" vertical-offset="228" max-vertical-offset="969">
+          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/HelloWorldLastModifiedCacheController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04871795" vertical-offset="76" max-vertical-offset="665">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/MyAbstractCommandController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="513">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/RegisterSimpleFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="969">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="33" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/CanCancelRegisterSimpleFormController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44970414" vertical-offset="0" max-vertical-offset="507">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="988">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/SuccessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15447155" vertical-offset="0" max-vertical-offset="492">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/CancelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15447155" vertical-offset="0" max-vertical-offset="492">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.1.1.RELEASE/spring-webmvc-3.1.1.RELEASE.jar!/org/springframework/web/servlet/mvc/ParameterizableViewController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34131736" vertical-offset="0" max-vertical-offset="494">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/InfoFillWizardFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1007">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15767635" vertical-offset="0" max-vertical-offset="482">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="228">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/tom-showcase.iml">
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="829">
+        <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1881">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.1.1.RELEASE/spring-webmvc-3.1.1.RELEASE.jar!/org/springframework/web/servlet/mvc/multiaction/PropertiesMethodNameResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2410148" vertical-offset="0" max-vertical-offset="950">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/UserDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="1900">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/DataBinderTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="760">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/registerAndValidator.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5659574" vertical-offset="0" max-vertical-offset="470">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.1.1.RELEASE/spring-beans-3.1.1.RELEASE.jar!/org/springframework/beans/propertyeditors/CustomDateEditor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2410148" vertical-offset="0" max-vertical-offset="969">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/user/createAndValidator.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="498">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/abstractCommand.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="524">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/bindAndValidate/success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="498">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/bindAndValidate/bindError.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="498">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/bindAndValidate/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="498">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/jsp/bindAndValidate/input.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="498">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/DataBinderErrorTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.33534136" vertical-offset="319" max-vertical-offset="817">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/java/cn/javass/chapter4/web/controller/ErrorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.18273093" vertical-offset="167" max-vertical-offset="665">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/webapp/WEB-INF/chapter4-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1326087" vertical-offset="4100" max-vertical-offset="4731">
+          <caret line="219" column="89" selection-start-line="219" selection-start-column="89" selection-end-line="219" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter4/src/main/resources/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hello-maven/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2504931" vertical-offset="462" max-vertical-offset="969">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="988">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello-maven/src/README.md">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8672199" vertical-offset="0" max-vertical-offset="532">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter2/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1007">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-chapter1/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1027027" vertical-offset="0" max-vertical-offset="646">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -831,10 +1471,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>springmvc-chapter1:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -842,7 +1484,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -877,11 +1519,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>show-case</last-edited>
+          <last-edited>springmvc-chapter4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37096775" />
                 <option value="0.6" />
               </list>
             </option>

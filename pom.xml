@@ -10,5 +10,8 @@ http://maven.apache.org/maven-v4_0_0.xsd">
     <packaging>pom</packaging>
     <modules>
         <module>hello-maven</module>
+        <module>springmvc-chapter1</module>
+        <module>springmvc-chapter2</module>
+        <module>springmvc-chapter4</module>
     </modules>
 </project>
