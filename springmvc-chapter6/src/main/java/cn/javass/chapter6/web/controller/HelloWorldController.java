@@ -8,7 +8,8 @@ import org.springframework.web.servlet.ModelAndView;
 //@RequestMapping
 @Controller
 public class HelloWorldController {
-
+    //放置@Controller或@RequestMapping，即可把一个POJO类变身为处理器；
+	//@RequestMapping(value = "/hello") 请求URL(/hello) 到 处理器的功能处理方法的映射；模型数据和逻辑视图名的返回
     @RequestMapping(value = "/hello")
     public ModelAndView helloWorld() {
 		//1、收集参数

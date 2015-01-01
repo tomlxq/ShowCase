@@ -6,6 +6,6 @@
 <title>Hello World</title>
 </head>
 <body>
-${message }
+${message }  <%--表示显示由HelloWorldController处理器传过来的模型数据--%>
 </body>
 </html>

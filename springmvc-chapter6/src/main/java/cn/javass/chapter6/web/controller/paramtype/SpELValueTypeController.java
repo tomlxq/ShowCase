@@ -15,7 +15,7 @@ public class SpELValueTypeController {
     
     @RequestMapping(value="/value")
     public String test(@Value("#{systemProperties['java.vm.version']}") String jvmVersion) {
-        
+        //@Value用于将一个SpEL表达式结果映射到到功能处理方法的参数上。
         System.out.println(jvmVersion);
         
         return "success";

@@ -2,7 +2,12 @@ package cn.javass.chapter6.web.controller.header;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+/*浏览器：建议chrome最新版本；
+        插件：ModHeader
+        安装地址：https://chrome.google.com/webstore/detail/idgpnmonknjnojddfkpgkljpfnnfcklj
 
+        插件安装步骤：
+        1、打开https://chrome.google.com/webstore/detail/idgpnmonknjnojddfkpgkljpfnnfcklj*/
 @Controller
 public class RequestHeaderController {
 
@@ -12,17 +17,7 @@ public class RequestHeaderController {
         System.out.println("=========Accept");
         return "success";
     }
-    /*浏览器：建议chrome最新版本；
 
-    插件：ModHeader
-
-    安装地址：https://chrome.google.com/webstore/detail/idgpnmonknjnojddfkpgkljpfnnfcklj
-
-
-
-    插件安装步骤：
-
-            1、打开https://chrome.google.com/webstore/detail/idgpnmonknjnojddfkpgkljpfnnfcklj*/
 
     @RequestMapping(value="/header/test1", headers = "abc") //表示请求的URL必须为“/header/test1”且 请求头中必须有abc参数才能匹配
 

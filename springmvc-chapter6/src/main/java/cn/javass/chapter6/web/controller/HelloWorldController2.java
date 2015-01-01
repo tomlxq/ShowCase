@@ -8,10 +8,10 @@ import org.springframework.web.servlet.support.RequestContextUtils;
 
 
 @Controller
-@RequestMapping(value="/user")                 //①处理器的通用映射前缀
+@RequestMapping(value="/user")                 //①处理器的通用映射前缀  ①类上的@RequestMapping(value="/user") 表示处理器的通用请求前缀
 public class HelloWorldController2 {
 
-    @RequestMapping(value = "/hello2")        //②相对于①处的映射进行窄化
+    @RequestMapping(value = "/hello2")        //②相对于①处的映射进行窄化 ②处理器功能处理方法上的是对①处映射的窄化
     public ModelAndView helloWorld() {
 		//1、收集参数
 		//2、绑定参数到命令对象

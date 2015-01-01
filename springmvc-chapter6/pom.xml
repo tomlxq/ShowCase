@@ -9,25 +9,27 @@
     <artifactId>springmvc-chapter6</artifactId>
     <packaging>war</packaging>
     <name>springmvc-chapter6 Maven Webapp</name>
-    <url>http://maven.apache.org</url>    <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <url>http://maven.apache.org</url>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <jdk.version>1.7</jdk.version>
+        <jdk.version>1.7</jdk.version>
 
-    <servlet.version>3.0.1</servlet.version>
-    <spring.version>4.0.0.RELEASE</spring.version>
-</properties>
+        <servlet.version>3.0.1</servlet.version>
+        <spring.version>4.0.0.RELEASE</spring.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>3.8.1</version>
             <scope>test</scope>
-        </dependency><dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-api</artifactId>
-        <version>1.7.9</version>
-    </dependency>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.9</version>
+        </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>

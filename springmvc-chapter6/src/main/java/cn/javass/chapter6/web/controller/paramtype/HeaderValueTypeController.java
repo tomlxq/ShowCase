@@ -17,7 +17,7 @@ public class HeaderValueTypeController {
     public String test(
             @RequestHeader("User-Agent") String userAgent,
             @RequestHeader(value="Accept") String[] accepts) {
-        
+        //如上配置将自动将请求头“User-Agent”值入参到userAgent参数上，并将“Accept”请求头值入参到accepts参数上。
         System.out.println(userAgent);
         System.out.println(Arrays.toString(accepts));
         

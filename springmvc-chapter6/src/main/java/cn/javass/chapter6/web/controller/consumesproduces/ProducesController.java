@@ -14,6 +14,8 @@ public class ProducesController {
     //①服务器端可以通过指定【headers = "Content-Type=application/json"】来声明可处理（可消费）的媒体类型，即只消费Content-Type指定的请求内容体数据；
    // ②服务器—发送请求—客户端：服务器生产响应头Content-Type指定的响应体数据（即服务器此时是生产者），客户端根据Content-Type消费内容体数据（即客户端此时是消费者）。
 
+
+    //表示将功能处理方法将生产json格式的数据，此时根据请求头中的Accept进行匹配，如请求头“Accept:application/json”时即可匹配;
     @RequestMapping(value = "/produces", produces = "application/json")
     public void response2(HttpServletResponse response) throws IOException {
         //①表示响应的内容区数据的媒体类型为json格式，且编码为utf-8(客户端应该以utf-8解码)
@@ -22,7 +24,7 @@ public class ProducesController {
         String jsonData = "{\"username\":\"zhang\", \"password\":\"123\"}";
         response.getWriter().write(jsonData);
     }
-    
+    //表示将功能处理方法将生产xml格式的数据，此时根据请求头中的Accept进行匹配，如请求头“Accept:application/xml”时即可匹配
     @RequestMapping(value = "/produces", produces = "application/xml")
     public void response3(HttpServletResponse response) throws IOException {
         //①表示响应的内容区数据的媒体类型为xml格式，且编码为utf-8(客户端应该以utf-8解码)

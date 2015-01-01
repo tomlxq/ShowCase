@@ -5,14 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 /*
 提示：
+1、一般浏览器只支持GET、POST请求方法，如想浏览器支持PUT、DELETE等请求方法只能模拟，稍候章节介绍。
+2、除了GET、POST，还有HEAD、OPTIONS、PUT、DELETE、TRACE。
+3、DispatcherServlet默认开启对 GET、POST、PUT、DELETE、HEAD的支持；
+4、如果需要支持OPTIONS、TRACE，请添加DispatcherServlet在web.xml的初始化参数：dispatchOptionsRequest 和 dispatchTraceRequest 为true。
 
-        1、一般浏览器只支持GET、POST请求方法，如想浏览器支持PUT、DELETE等请求方法只能模拟，稍候章节介绍。
-
-        2、除了GET、POST，还有HEAD、OPTIONS、PUT、DELETE、TRACE。
-
-        3、DispatcherServlet默认开启对 GET、POST、PUT、DELETE、HEAD的支持；
-
-        4、如果需要支持OPTIONS、TRACE，请添加DispatcherServlet在web.xml的初始化参数：dispatchOptionsRequest 和 dispatchTraceRequest 为true。
+请求方法的详细使用请参考RESTful架构风格一章。
 */
 
 @Controller
@@ -29,7 +27,7 @@ public class RequestMethodController {
         return "redirect:/success";        
     }
     
-    @RequestMapping(value="/methodOr", method = {RequestMethod.POST, RequestMethod.GET})  //即请求方法可以是 GET 或 POST。
+    @RequestMapping(value="/methodOr", method = {RequestMethod.POST, RequestMethod.GET})  //即请求方法可以是 GET 或 POST。。
     public String or() {
         System.out.println("================GET or POST");
         return "redirect:/success";        
