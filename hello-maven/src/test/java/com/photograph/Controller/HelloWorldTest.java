@@ -1,10 +1,11 @@
 /**
 * Created by tom on 2014/12/17.
 */
-package com.juvenxu.mvnbook.helloworld;
+package com.photograph.Controller;
 
 
 
+import com.photograph.web.controller.HelloWorld;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

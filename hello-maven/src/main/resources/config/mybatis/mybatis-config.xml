@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--
+<plugins>
+    指定数据库分页方言Dialect, 其它方言:OracleDialect,SQLServerDialect,SybaseDialect,DB2Dialect,
+    PostgreSQLDialect,MySQLDialect,DerbyDialect,HSQLDialect
+    <plugin interceptor="ccom.photograph.common.mybatis.OffsetLimitInterceptor">
+        <property name="dialectClass" value="com.photograph.common.mybatis.dialect.OracleDialect"/>
+    </plugin>
+</plugins>
+    -->
+    <mappers>
+        <mapper resource="config/sqlmap/common_SqlMap.xml"/>
+        <mapper resource="config/sqlmap/BaseModuleMapper.xml"/>
+        <mapper resource="config/sqlmap/BaseRoleModuleMapper.xml"/>
+        <mapper resource="config/sqlmap/BaseRoleMapper.xml"/>
+        <mapper resource="config/sqlmap/BaseUserRoleMapper.xml"/>
+        <mapper resource="config/sqlmap/BaseUserMapper.xml"/>
+        <mapper resource="config/sqlmap/BaseFieldMapper.xml"/>
+    </mappers>
+</configuration>

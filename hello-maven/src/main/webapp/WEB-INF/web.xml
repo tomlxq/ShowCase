@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <!-- Spring ApplicationContext配置文件的路径 ,可使用通配符，多个路径用,号分隔 -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:/config/spring/spring.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <servlet><!--<servlet-name>example</servlet-name>这个Servlet的名字是example，
+    可以有多个DispatcherServlet，是通过名字来区分的。每一个DispatcherServlet有自己的WebApplicationContext上下文对象。
+    同时保存的ServletContext中和Request对象中，关于key，以后说明。在DispatcherServlet的初始化过程中，
+    框架会在web应用的 WEB-INF文件夹下寻找名为[servlet-name]-servlet.xml 的配置文件，生成文件中定义的bean-->
+        <servlet-name>springMVC</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <!--  指明了配置文件的文件名，不使用默认配置文件名，而使用springmvc-servlet.xml配置文件。
+              其中<param-value>**.xml</param-value> 这里可以使用多种写法
+              1、不写,使用默认值:/WEB-INF/<servlet-name>-servlet.xml
+              2、<param-value>/WEB-INF/classes/springMVC.xml</param-value>
+              3、<param-value>classpath*:springMVC-mvc.xml</param-value>
+              4、多个值用逗号分隔-->
+            <param-value>classpath:/config/spring/springmvc-servlet.xml</param-value>
+        </init-param>
+        <!--是启动顺序，让这个Servlet随Servletp容器一起启动-->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>springMVC</servlet-name>
+        <!--
+        <url-pattern>*.form</url-pattern> 会拦截*.form结尾的请求
+        Servlet拦截匹配规则可以自已定义，拦截哪种URL合适？
+        当映射为@RequestMapping("/user/add")时，为例：
+        1、拦截*.do、*.htm， 例如：/user/add.do
+        这是最传统的方式，最简单也最实用。不会导致静态文件（jpg,js,css）被拦截。
+
+        2、拦截/，例如：/user/add
+        可以实现现在很流行的REST风格。很多互联网类型的应用很喜欢这种风格的URL。
+        弊端：会导致静态文件（jpg,js,css）被拦截后不能正常显示。想实现REST风格，事情就是麻烦一些。后面有解决办法还算简单。
+
+        3、拦截/*，这是一个错误的方式，请求可以走到Action中，但转到jsp时再次被拦截，不能访问到jsp。
+        -->
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <!-- 使Spring支持request与session的scope,如:<bean id="loginAction" class="com.foo.LoginAction" scope="request"/> -->
+    <listener>
+        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+    </listener>
+    <!-- Spring 刷新Introspector防止内存泄露 -->
+    <listener>
+        <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+    </listener>
+</web-app>
