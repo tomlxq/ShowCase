@@ -1,8 +1,6 @@
 package com.greentea.multilang;
 
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,7 +14,7 @@ import java.util.ResourceBundle;
  * @version 创建时间： 2015/1/5  10:29
  */
 public class TestBundle extends TestBase {
-    private static final Logger logger = LoggerFactory.getLogger(TestBundle.class);
+
 
     @Test
     public void testLang() {

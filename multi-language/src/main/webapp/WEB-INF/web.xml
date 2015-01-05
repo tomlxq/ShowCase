@@ -8,6 +8,13 @@
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:/spring-common.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
     <filter>
      <filter-name>systemLanguageFilter</filter-name>
        <filter-class>com.greentea.multilang.filter.SystemLanguageFilter</filter-class>
