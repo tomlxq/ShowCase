@@ -16,5 +16,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
         <module>springmvc-chapter5</module>
         <module>springmvc-chapter6</module>
         <module>springmvc-chapter7</module>
+        <module>multi-language</module>
+
     </modules>
 </project>

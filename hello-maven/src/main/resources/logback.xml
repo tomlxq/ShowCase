@@ -15,7 +15,7 @@
 	<appender name="logfile" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- 按天分文件夹存放 ，并压缩 -->
-			<fileNamePattern>${USER_HOME}/logs/hello-maven/%d{yyyy-MM-dd}/log.%i.txt.gz</fileNamePattern>
+			<fileNamePattern>${USER_HOME}/hello-maven/target/logs/%d{yyyy-MM-dd}/log.%i.txt.gz</fileNamePattern>
 			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
 				<!-- 每个文件的最大值 5MB,超过则编号,生成新文件 -->
 				<maxFileSize>5MB</maxFileSize>
