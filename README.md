@@ -19,3 +19,10 @@ http请求信息包含六部分信息：
 
 
 TOM
+
+
+手工加缺少的jar
+mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.4.0 -Dpackaging=jar -Dfile=F:\data\wwwroot\tom_arch\preference\spring3mvc\authority-1.0.0\WEB-INF\lib\ojdbc14-10.2.0.4.0.jar
+mvn install:install-file -DgroupId=proxool -DartifactId=proxool -Dversion=0.9.1 -Dpackaging=jar -Dfile=F:\data\wwwroot\tom_arch\preference\spring3mvc\authority-1.0.0\WEB-INF\lib\proxool-0.9.1.jar
+mvn install:install-file -DgroupId=proxool -DartifactId=proxool-cglib -Dversion=0.9.1 -Dpackaging=jar -Dfile=F:\data\wwwroot\tom_arch\preference\spring3mvc\authority-1.0.0\WEB-INF\lib\proxool-cglib-0.9.1.jar
+mvn install:install-file -DgroupId=com.google.code -DartifactId=kaptcha -Dversion=2.3.3 -Dpackaging=jar -Dfile=F:\data\wwwroot\tom_arch\preference\spring3mvc\authority-1.0.0\WEB-INF\lib\kaptcha-2.3.3.jar
