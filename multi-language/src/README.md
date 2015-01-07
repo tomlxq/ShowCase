@@ -14,3 +14,5 @@ http://blog.csdn.net/linlzk/article/details/3389925(OK)
 http://liuzidong.iteye.com/blog/1071823(OK)
 Spring 3 mvc中返回pdf,json,xml等不同的view
 http://jackyrong.iteye.com/blog/1874918
+通过HTML生成pdf方案
+http://downpour.iteye.com/blog/509417

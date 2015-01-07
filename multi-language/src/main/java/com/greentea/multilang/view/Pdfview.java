@@ -26,6 +26,10 @@ public class PdfView  extends AbstractPdfView {
         Font FontChinese = null;
         try {
            // BaseFont bf = BaseFont.createFont(BaseFont.HELVETICA,BaseFont.WINANSI, BaseFont.NOT_EMBEDDED);
+            //微软雅黑字体文件
+            //fontResolver.addFont("C:/Windows/fonts/msyh.ttf", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+            //微软雅黑加粗后额字体文件
+            //fontResolver.addFont("C:/Windows/fonts/msyhbd.ttf", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
             BaseFont bfHei = BaseFont.createFont("c:\\Windows\\Fonts\\SIMHEI.TTF", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
             Font font = new Font(bfHei, 32);
             String text = "这是黑体字测试！";

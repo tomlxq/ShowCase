@@ -132,4 +132,10 @@ public class PdfAndExcelController {
         model.put("list", getStudents());
         return new ModelAndView(new ViewPDF1(), model);
     }
+    @RequestMapping("/viewPDF")
+    public ModelAndView viewPDF2(HttpServletRequest request, HttpServletResponse response)  {
+        Map model = new HashMap();
+        return new ModelAndView("pdf", model);
+
+    }
 }
