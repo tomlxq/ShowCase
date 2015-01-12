@@ -3,10 +3,14 @@ package com.greentea.multilang.controller;
 import com.greentea.multilang.pojo.Person;
 import com.greentea.multilang.pojo.Student;
 import com.greentea.multilang.pojo.User;
-import com.greentea.multilang.view.JXLExcelView;
-import com.greentea.multilang.view.ViewExcel;
-import com.greentea.multilang.view.ViewExcel1;
-import com.greentea.multilang.view.ViewPDF1;
+import com.greentea.multilang.view.*;
+import com.lowagie.text.DocumentException;
+import com.lowagie.text.pdf.BaseFont;
+import freemarker.template.Configuration;
+import freemarker.template.Template;
+import freemarker.template.TemplateException;
+import net.sf.json.JSONObject;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -15,13 +19,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import org.w3c.dom.Document;
+import org.xhtmlrenderer.pdf.ITextFontResolver;
+import org.xhtmlrenderer.pdf.ITextRenderer;
+import org.xhtmlrenderer.resource.XMLResource;
+import org.xml.sax.InputSource;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.io.*;
+import java.util.*;
 
 /**
  * 说明：
@@ -32,6 +39,7 @@ import java.util.Map;
 @Controller
 public class PdfAndExcelController {
     private static final Logger logger = LoggerFactory.getLogger(PdfAndExcelController.class);
+
     @RequestMapping("/pdf")  //http://localhost:8080/multi-language/pdf.pdf
     public String helloPDF() {
         return "helloPDF";
@@ -54,8 +62,8 @@ public class PdfAndExcelController {
         return person;
     }
 
-    @RequestMapping(value = "/exceltest",method= RequestMethod.GET) //http://localhost:8080/multi-language/exceltest
-    public ModelAndView viewExcel(HttpServletRequest request, HttpServletResponse response){
+    @RequestMapping(value = "/exceltest", method = RequestMethod.GET) //http://localhost:8080/multi-language/exceltest
+    public ModelAndView viewExcel(HttpServletRequest request, HttpServletResponse response) {
         logger.debug("ViewController.viewExcel is started......");
         List list = new ArrayList();
         Map model = new HashMap();
@@ -66,7 +74,8 @@ public class PdfAndExcelController {
         logger.debug("ViewController.viewExcel is ended......");
         return new ModelAndView(viewExcel, model);
     }
-    @RequestMapping(value = "/pdftest",method=RequestMethod.GET) //http://localhost:8080/multi-language/pdftest
+
+    @RequestMapping(value = "/pdftest", method = RequestMethod.GET) //http://localhost:8080/multi-language/pdftest
     public ModelAndView viewPDF(HttpServletRequest request,
                                 HttpServletResponse response) throws Exception {
         List list = new ArrayList();
@@ -85,7 +94,7 @@ public class PdfAndExcelController {
         return new ModelAndView(new ViewExcel1(), model);
     }
 
-    private List getStudents(){
+    private List getStudents() {
         List stuList = new ArrayList();
         // 构造数据
         Student stu1 = new Student("gaoxiang1", "male1", "20060101", 1);
@@ -100,15 +109,16 @@ public class PdfAndExcelController {
         stuList.add(stu5);
         return stuList;
     }
+
     @RequestMapping("/jxlExcel")
-    public ModelAndView viewJxlExcel(@RequestParam(value="titles", required=false, defaultValue="编号,姓名,年龄,性别,密码,地址") String titles ,@RequestParam(value="colums", required=false, defaultValue="id,name,age,sex,password,address") String colums,HttpServletRequest request,
+    public ModelAndView viewJxlExcel(@RequestParam(value = "titles", required = false, defaultValue = "编号,姓名,年龄,性别,密码,地址") String titles, @RequestParam(value = "colums", required = false, defaultValue = "id,name,age,sex,password,address") String colums, HttpServletRequest request,
                                      HttpServletResponse response) {
-        String [] array1 = null;
-        if(null != colums && colums.indexOf(",") != -1){
+        String[] array1 = null;
+        if (null != colums && colums.indexOf(",") != -1) {
             array1 = colums.split(",");
         }
-        String [] array2 = null;
-        if(null != titles && titles.indexOf(",") != -1){
+        String[] array2 = null;
+        if (null != titles && titles.indexOf(",") != -1) {
             array2 = titles.split(",");
         }
         Map model = new HashMap();
@@ -127,15 +137,179 @@ public class PdfAndExcelController {
 
     @RequestMapping("/viewPDF1")
     public ModelAndView viewPDF1(HttpServletRequest request,
-                                HttpServletResponse response) throws Exception {
+                                 HttpServletResponse response) throws Exception {
         Map model = new HashMap();
         model.put("list", getStudents());
         return new ModelAndView(new ViewPDF1(), model);
     }
-    @RequestMapping("/viewPDF")
-    public ModelAndView viewPDF2(HttpServletRequest request, HttpServletResponse response)  {
+
+    public String getTemplateString(String template, Map map) {
+        File file = new File(template);
+        logger.debug("{}", template);
+        if (StringUtils.isNotEmpty(template) && !file.exists()) return "";
+        try {
+            Configuration cfg = new Configuration();
+            cfg.setDirectoryForTemplateLoading(new File(file.getParent()));
+            Template temp = cfg.getTemplate(file.getName(), Locale.US, "UTF-8");
+            StringWriter out = new StringWriter();
+            temp.process(map, out);
+            return out.toString();
+        } catch (TemplateException t) {
+            logger.debug("{}", t);
+        } catch (IOException i) {
+            logger.debug("{}", i);
+        }
+        return "";
+    }
+
+    @RequestMapping("/viewFtl")
+    public ModelAndView pdf(HttpServletRequest request,
+                            HttpServletResponse response) {
+
         Map model = new HashMap();
-        return new ModelAndView("pdf", model);
+        List<JSONObject> list = new ArrayList<JSONObject>();
+        JSONObject role = new JSONObject();
+        role.put("roleId", 1);
+        role.put("roleName", "admin");
+        role.put("createTime", new Date().getTime());
+        role.put("roleTypeId", 1);
+        role.put("roleApplyScopeId", 1);
+        list.add(role);
+        role = new JSONObject();
+        role.put("roleId", 2);
+        role.put("roleName", "guest");
+        role.put("createTime", new Date().getTime());
+        role.put("roleTypeId", 2);
+        role.put("roleApplyScopeId", 2);
+        list.add(role);
+        role = new JSONObject();
+        role.put("roleId", 3);
+        role.put("roleName", "user");
+        role.put("createTime", new Date().getTime());
+        role.put("roleTypeId", 3);
+        role.put("roleApplyScopeId", 3);
+        list.add(role);
+        // model.put("roleList", list);
+        ModelAndView mav = new ModelAndView();
+        if (list == null) {
+            mav.setViewName("forward:/error/page-not-found");
+            return mav;
+        }
+        mav.setViewName("pdf");
+        mav.addObject("roleList", list);
+        return mav;
+    }
+    @RequestMapping("/viewPDF2")
+    public ModelAndView generatePdf(HttpServletRequest request,
+                                    HttpServletResponse response) throws IOException, DocumentException {
+
+        //中文需转义
+        String pdfName = "pdfName";
+       // response.setHeader("Content-disposition", "attachment;filename="+pdfName);
+        response.setContentType("application/pdf");
+        OutputStream os = response.getOutputStream();
+        ITextRenderer renderer = new ITextRenderer();
+        //指定模板地址
+        renderer.setDocument("http://localhost:8080/viewFtl");
+       // renderer.getSharedContext().setUserAgentCallback(new HttpURLUserAgent(renderer.getOutputDevice()));
+        ITextFontResolver fontResolver = renderer.getFontResolver();
+       // if (StringUtils.isOSWindow())
+            fontResolver.addFont("C:/Windows/Fonts/ARIALUNI.TTF",
+                    BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+      //  else
+       //     fontResolver.addFont("/usr/share/fonts/TTF/ARIALUNI.TTF",
+       //             BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+        renderer.layout();
+        renderer.createPDF(os);
+        os.close();
+
+        return null;
+    }
+    /*http://blog.csdn.net/shanliangliuxing/article/details/6833471*/
+    @RequestMapping("/viewPDF3")
+    public File viewPDF2(HttpServletRequest request, HttpServletResponse response) throws IOException, DocumentException, TemplateException {
+        Map model = new HashMap();
+        List<JSONObject> list = new ArrayList<JSONObject>();
+        JSONObject role = new JSONObject();
+        role.put("roleId", 1);
+        role.put("roleName", "管理员");
+        role.put("createTime", new Date().getTime());
+        role.put("roleTypeId", 1);
+        role.put("roleApplyScopeId", 1);
+        list.add(role);
+        role = new JSONObject();
+        role.put("roleId", 2);
+        role.put("roleName", "guest");
+        role.put("createTime", new Date().getTime());
+        role.put("roleTypeId", 2);
+        role.put("roleApplyScopeId", 2);
+        list.add(role);
+        role = new JSONObject();
+        role.put("roleId", 3);
+        role.put("roleName", "user");
+        role.put("createTime", new Date().getTime());
+        role.put("roleTypeId", 3);
+        role.put("roleApplyScopeId", 3);
+        list.add(role);
+        model.put("roleList", list);
+        //logger.debug("@@@@@@@@@@@{}", request.getContextPath());
+        //  try {
+        //Map simpleHash = new HashMap();
+        //simpleHash.put("simpleHash", list);
+        String tplPath = request.getSession().getServletContext().getRealPath("") + "\\WEB-INF\\jsp\\pdf.ftl";
+       logger.debug("{}",request.getSession().getServletContext().getRealPath("/"));
+        //F:\data\wwwroot\ShowCase\multi-language\src\main\webapp\
+        tplPath = request.getSession().getServletContext().getRealPath("")+"\\WEB-INF\\jsp\\pdf.ftl";
+        logger.debug("{}", new File(tplPath).exists());
+        logger.debug("##########{}", request.getContextPath());
+        logger.debug("##########{}", tplPath);
+        String htmlStr = getTemplateString(tplPath, model);
+        logger.debug("{}", htmlStr);
+
+        //中文需转义
+        //String pdfName = "pdfName";
+        String excelName = "测试中文.pdf";
+     /*   例1.内嵌显示一个文件
+        Content-disposition: inline; filename=foobar.pdf
+        例2.往response里附加一个文件
+
+        Content-disposition: attachment; filename=foobar.pdf*/
+
+        //response.setHeader("Content-Disposition", "inline;filename="+ URLEncoder.encode(excelName, "utf-8")); // 设置文件名
+        response.setContentType("application/pdf");
+        OutputStream os = response.getOutputStream();
+        ITextRenderer renderer = new ITextRenderer();
+        //指定模板地址
+        //renderer.setDocument("http://localhost:8080/multi-language");
+
+        // 解决图片的相对路径问题
+        //renderer.getSharedContext().setBaseURL("file:/F:/data/wwwroot/ShowCase/multi-language/src/main/webapp");
+        //logger.debug("########## renderer.getSharedContext().getBaseURL {}", renderer.getSharedContext().getBaseURL());
+        //renderer.getSharedContext().setBaseURL(new File(request.getSession().getServletContext().getRealPath("/")).toURI().toURL().toString());
+        //logger.debug("########## renderer.getSharedContext().getBaseURL {}", renderer.getSharedContext().getBaseURL());
+       // String base=new File(request.getSession().getServletContext().getRealPath("")).toURI().toURL().toString();
+       // logger.debug("{}",base);
+        renderer.getSharedContext().setUserAgentCallback(new HttpURLUserAgent(request,renderer.getOutputDevice()));
+        // 解决中文支持问题
+        ITextFontResolver fontResolver = renderer.getFontResolver();
+        fontResolver.addFont("C:/Windows/Fonts/arialuni.ttf", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+        //这里引用了arialuni.ttf字体，它位于C盘windows/fonts文件夹下，将它引用后，还需要在页面上使用这个字体
+        // <body style="font-family:'Arial Unicode MS'">
+
+        InputSource is = new InputSource(new BufferedReader(new StringReader(htmlStr)));
+        Document dom = XMLResource.load(is).getDocument();
+        renderer.setDocument(dom, (String) null);
+        //file:/F:/data/wwwroot/ShowCase/multi-language/src/main/webapp/
+       // renderer.setDocument(dom, base);
+       // renderer.getSharedContext().setBaseURL(base);
+        renderer.layout();
+        renderer.createPDF(os);
+        os.close();
+
+        return null;
+
 
     }
+
+
 }
