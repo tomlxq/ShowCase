@@ -16,3 +16,7 @@ Spring 3 mvc中返回pdf,json,xml等不同的view
 http://jackyrong.iteye.com/blog/1874918
 通过HTML生成pdf方案
 http://downpour.iteye.com/blog/509417
+http://blog.csdn.net/shanliangliuxing/article/details/6833471
+http://downpour.iteye.com/blog/509417?page=4#comments
+不用再关心资源路径问题，所有调试项目在web root中取值
+http://www.duyaofei.com/2014/02/25/spring-mvc%E5%92%8Cfreemaker%E7%9A%84%E6%95%B4%E5%90%88%E4%BB%A5%E5%8F%8Afreemarker-ftl%E4%B8%AD%E8%8E%B7%E5%8F%96basepath%E5%BD%93%E5%89%8Dcontext%E7%9B%AE%E5%BD%95%E4%BF%A1%E6%81%AF/
