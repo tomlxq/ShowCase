@@ -25,3 +25,28 @@ http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs
 下载插件
 http://jqueryui.com/resources/download/jquery-ui-1.11.2.zip
 http://lx.cdn.baidupcs.com/file/fd77f983873b2c0182e7a724c30375dd?bkt=p-e1679a4cbb2fa5d80d8db1e7fa56de87&xcode=b82bb204e22f789269891212f3f4ed46c8abf377798e00360047804bae6a1ada&fid=3089496167-250528-3858809381&time=1421066691&sign=FDTAXERLBH-DCb740ccc5511e5e8fedcff06b081203-YHxnkNdwVjdbB7IfMI%2BelMFeVhM%3D&to=sc&fm=Bei,B,T,t&sta_dx=0&sta_cs=21&sta_ft=zip&sta_ct=7&newver=1&newfm=1&flow_ver=3&sl=81723466&expires=1421067291&rt=sh&r=388991346&mlogid=1275664103&sh=1&vuk=3075728161&vbdid=1415757863&fin=uploadifive-v1.1.2-standard.zip&fn=uploadifive-v1.1.2-standard.zip
+
+http://www.serv-u.com/Serv-U-Administrator-Guide.pdf
+http://www.serv-u.com/serv-u_db_integration_guide.pdf
+
+yum -y install mysql mysql-connector-odbc
+vi /etc/odbc.ini
+[tmlsbabu]
+Description = The Database for Asterisk  ;这一句，不重要。
+Trace       = On        ;这也可有可无
+TraceFile   = stderr  ;这同上
+Driver      = MySQL  ;是的，你没看错，他写的是MySQL不是 /usr/lib/libmyodbc3_r.so，这样他还会自动识别你是需要64还是32位的驱动
+SERVER      = localhost
+USER        = root
+PASSWORD    = koutu567!@#
+PORT        = 3306
+DATABASE    = koutu
+mysqldmin -uroot -p password 'koutu567!@#';
+
+
+
+[root@bo-test bin]# find  / -name mysql -print
+[root@bo-test bin]# groupadd mysql
+[root@bo-test bin]# useradd -g mysql mysql
+[root@bo-test bin]# chown -R mysql:mysql /usr/lib64/
+yum install mysql-server
