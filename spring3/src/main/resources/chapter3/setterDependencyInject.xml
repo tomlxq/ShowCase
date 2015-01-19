@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    
+    <!-- 通过setter方式进行依赖注入 setter注入
+
+       setter注入，是通过在通过构造器、静态工厂或实例工厂实例好Bean后，通过调用Bean类的setter方法进行注入依赖
+
+       JavaBean：是本质就是一个POJO类，但具有一下限制：
+
+         该类必须要有公共的无参构造器，如public HelloImpl4() {}；
+
+         属性为private访问级别，不建议public，如private String message;
+
+         属性必要时通过一组setter（修改器）和getter（访问器）方法来访问；
+
+         setter方法，以“set” 开头，后跟首字母大写的属性名，如“setMesssage”,简单属性一般只有一个方法参数，方法返回值通常为“void”;
+
+         getter方法，一般属性以“get”开头，对于boolean类型一般以“is”开头，后跟首字母大写的属性名，如“getMesssage”，“isOk”；
+
+         还有一些其他特殊情况，比如属性有连续两个大写字母开头，如“URL”,则setter/getter方法为：“setURL”和“getURL”，其他一些特殊情况请参看“Java Bean”命名规范。
+
+-->
+    <bean id="bean" class="cn.javass.spring.chapter3.HelloImpl4">
+        <property name="message" value="Hello World!"/>
+        <property name="index">
+            <value>1</value>
+        </property>
+    </bean>
+
+</beans>

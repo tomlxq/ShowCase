@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    <bean id="bean1" class="java.lang.String">
+        <constructor-arg index="0" value="test"/>
+    </bean>
+    <bean id="bean2" class="java.lang.String">
+        <constructor-arg index="0" value="test"/>
+    </bean>
+    <!--用于注入Bean的ID，ID是一个常量不是引用，且类似于注入常量，但提供错误验证功能-->
+    <bean id="idrefBean1" class="cn.javass.spring.chapter3.bean.IdRefTestBean">
+               <property name="id"><idref bean="bean1"/></property>
+        </bean>
+    <!--第二种方式（<idref bean="bean1"/>）可以在容器初始化时校验被引用的Bean是否存在，
+    如果不存在将抛出异常，而第一种方式（<idref local="bean2"/>）只有在Bean实际使用时才能发现传入的Bean的ID是否正确，
+    可能发生不可预料的错误。因此如果想注入Bean的ID，推荐使用第二种方式。-->
+    <bean id="idrefBean2" class="cn.javass.spring.chapter3.bean.IdRefTestBean">
+        <property name="id"><idref local="bean2"/></property>
+    </bean>
+
+</beans>

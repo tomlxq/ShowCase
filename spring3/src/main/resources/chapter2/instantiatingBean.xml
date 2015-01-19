@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+	    xsi:schemaLocation="
+	       http://www.springframework.org/schema/beans
+	       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		   http://www.springframework.org/schema/context
+		   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <!--使用默认构造参数 使用空构造器进行定义，使用此种方式，class属性指定的类必须有空构造器-->
+
+    <bean name="bean1" class="cn.javass.spring.chapter2.HelloImpl2"/>
+
+    <!--使用有参数构造参数
+    使用有参数构造器进行定义，使用此中方式，
+    可以使用< constructor-arg >标签指定构造器参数值，其中index表示位置，value表示常量值，也可以指定引用，指定引用使用ref来引用另一个Bean定义-->
+    <bean name="bean2" class="cn.javass.spring.chapter2.HelloImpl2">
+        <!-- 指定构造器参数 -->
+        <constructor-arg index="0" value="Hello Spring!"/>
+    </bean>
+    <!-- 使用静态工厂方法
+    使用静态工厂方式实例化Bean，使用这种方式除了指定必须的class属性，还要指定factory-method属性来指定实例化Bean的方法，而且使用静态工厂方法也允许指定方法参数，spring IoC容器将调用此属性指定的方法来获取Bean
+    -->
+    <bean id="bean3" class="cn.javass.spring.chapter2.HelloApiStaticFactory" factory-method="newInstance">
+        <constructor-arg index="0" value="Hello Spring!"/>
+    </bean>
+    <!-- 使用实例工厂方法 使用实例工厂方法实例化Bean，使用这种方式不能指定class属性，此时必须使用factory-bean属性来指定工厂Bean，factory-method属性指定实例化Bean的方法，而且使用实例工厂方法允许指定方法参数，方式和使用构造器方式一样-->
+    <bean id="beanInstanceFactory" class="cn.javass.spring.chapter2.HelloApiInstanceFactory"/>
+    <bean id="bean4" factory-bean="beanInstanceFactory" factory-method="newInstance">
+        <constructor-arg index="0" value="Hello Spring!"></constructor-arg>
+    </bean>
+
+    
+</beans>
