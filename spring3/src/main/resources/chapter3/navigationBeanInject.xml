@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ <!--   所谓对象图导航是指类似a.b.c这种点缀访问形式的访问或修改值。Spring支持对象图导航方式依赖注入。对象图导
+    航依赖注入有一个限制就是比如a.b.c对象导航图注入中a和b必须为非null值才能注入c，否则将抛出空指针异常。
+    Spring不仅支持对象的导航，还支持数组、列表、字典、Properties数据类型的导航，对Set数据类型无法支持，
+    因为无法导航。
+    数组和列表数据类型可以用array[0]、list[1]导航，注意”[]”里的必须是数字，因为是按照索引进行导航，对于数组类
+    型注意不要数组越界错误。
+    字典Map数据类型可以使用map[1]、map[str]进行导航，其中“[]”里的是基本类型，无法放置引用类型。-->
+
+
+<bean id="c" class="cn.javass.spring.chapter3.bean.NavigationC"/>
+<bean id="b" class="cn.javass.spring.chapter3.bean.NavigationB">
+<property name="list"><list></list></property>
+<property name="map"><map></map></property>
+<property name="properties"><props></props></property>
+</bean>
+
+
+ <bean id="a" class="cn.javass.spring.chapter3.bean.NavigationA">
+ <!-- 首先注入navigatiionB 确保它非空-->
+ <property name="navigationB" ref="b"/>
+ <!-- 对象图导航注入-->
+ <property name="navigationB.navigationC" ref="c"/>
+ <!-- 注入列表数据类型数据-->
+ <property name="navigationB.list[0]" ref="c"/>
+ <!-- 注入map类型数据-->
+ <property name="navigationB.map[key]" ref="c"/>
+  <!-- 注入properties类型数据-->
+  <property name="navigationB.properties[0]" ref="c"/>
+  <!-- 注入properties类型数据-->
+  <property name="navigationB.properties[1]" ref="c"/>
+  <!-- 注入数组类型数据，注意不要越界-->
+  <property name="navigationB.array[0]" ref="c"/>
+  </bean>
+</beans>

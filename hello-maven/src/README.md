@@ -12,6 +12,10 @@ delete from user where user.user='';
 
 CREATE DATABASE IF NOT EXISTS photograph;
 USE photograph;
+
+mysql -u root
+create database ieasy;
+mysql -u root --default-character-set=utf8 -B ieasy -e "source F:\data\wwwroot\tom_arch\opensource\ieasy\backup\sql\ieasy-2015-01-22 0917.sql"
 */
 ========
 maven安装配置
@@ -356,4 +360,24 @@ WebApplicationContext applicationContext  = WebApplicationContextUtils .getWebAp
  <bean id="jaxb2RootElement_hmc" class="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter" /><!-- 处理.. -->
  <bean id="jackson_hmc" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" /><!-- 处理json-->
 
-
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.0</version>
+    <configuration>
+        <source>1.7</source>
+        <target>1.7</target>
+        <encoding>UTF-8</encoding>
+    </configuration>
+</plugin>
+<plugin>
+    <groupId>org.apache.tomcat.maven</groupId>
+    <artifactId>tomcat7-maven-plugin</artifactId>
+    <version>2.0</version>
+    <configuration>
+        <path>/${finalName}</path>
+        <!--解决调试资源问题-->
+        <username>admin</username>
+        <password>password</password>
+    </configuration>
+</plugin>

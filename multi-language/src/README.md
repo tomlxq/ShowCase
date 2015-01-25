@@ -50,3 +50,85 @@ mysqldmin -uroot -p password 'koutu567!@#';
 [root@bo-test bin]# useradd -g mysql mysql
 [root@bo-test bin]# chown -R mysql:mysql /usr/lib64/
 yum install mysql-server
+
+
+自动部署至外部Tomcat
+CATALINA_HOME=C:\opensource\tomcat-7.0.34
+Path的最后面添加%CATALINA_HOME%\lib; %CATALINA_HOME%\lib\servlet-api.jar;%CATALINA_HOME%\lib\jsp-api.jar
+C:\opensource\tomcat-7.0.34（Tomcat目录）下的conf目录，编辑tomcat-users.xml
+<tomcat-users>
+<role rolename="manager"/>
+<role rolename="admin"/>
+<role rolename="manager-gui"/>
+<user username = "admin" password = "password" roles = "admin,manager,manager-gui,manager-script,manager-jmx,manager-status" />
+</tomcat-users>
+
+补充： 使用外部的tomcat7 需要使用 tomcat-maven-plugin 的新版本，版本支持tomcat6和tomcat7，
+groupId也已经由之前的org.codehaus.mojo改为org.apache.tomcat.maven。
+可以参考：Maven的Tomcat插件地址为，http://tomcat.apache.org/maven-plugin.html。
+修改项目的pom.xml在project的build节点下 添加tomcat-maven-plugin插件信息，如下写法添加了tomcat6和tomcat7的插件
+<plugins>
+ <plugin>
+  <groupId>org.apache.tomcat.maven</groupId>
+  <artifactId>tomcat6-maven-plugin</artifactId>
+  <version>2.0-SNAPSHOT</version>
+  <configuration>
+  <url>http://localhost:8080/manager/html</url>
+  <server>tomcat</server>
+  </configuration>
+ </plugin>
+ <plugin>
+  <groupId>org.apache.tomcat.maven</groupId>
+  <artifactId>tomcat7-maven-plugin</artifactId>
+  <version>2.0-SNAPSHOT</version>
+  <configuration>
+  <url>http://localhost:8080/manager/text</url>
+  <server>tomcat7</server>
+  <username>admin</username>
+  <password>password</password>
+  </configuration>
+ </plugin>
+</plugins>
+
+在project节点下，在插件仓库（plugin repositories）和普通仓库（repositories）中添加以下仓库到pom.xml，保证maven可以从仓库中下载到tomcat-maven-plugin插件，少添加了这段信息，会出现如下报错信息：
+No plugin found for prefix 'tomcat' in the current project and in the plug
+<repositories>
+<repository>
+    <id>people.apache.snapshots</id>
+    <url>http://repository.apache.org/content/groups/snapshots-group/</url>
+    <releases>
+        <enabled>false</enabled>
+    </releases>
+    <snapshots>
+        <enabled>true</enabled>
+    </snapshots>
+</repository>
+</repositories>
+<pluginRepositories>
+<pluginRepository>
+    <id>apache.snapshots</id>
+    <name>Apache Snapshots</name>
+    <url>
+        http://repository.apache.org/content/groups/snapshots-group/
+    </url>
+    <releases>
+        <enabled>false</enabled>
+    </releases>
+    <snapshots>
+        <enabled>true</enabled>
+    </snapshots>
+</pluginRepository>
+</pluginRepositories>
+
+修改%MAVEN_HOME%\conf\setting.xml
+在<servers>标签中加入
+<server>
+       <id>tomcat7</id>
+       <username>admin</username>
+       <password>password</password>
+</server>
+
+启动tomcat
+运行请先启动tomcat，在maven build的goals中输入命令tomcat7:deploy
+
+
