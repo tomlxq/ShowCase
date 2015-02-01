@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+<!--默认所有的结果页面都存储在WEB-INF/content下，你可以通过设置struts.convention.result.path这个属性的值来改变到其他路径-->
+    <constant name="struts.convention.result.path" value="/WEB-INF/jsp" />
+    <!-- 默认包路径包含action,actions,struts,struts2的所有包都会被struts作为含有Action类的路径来搜索。你可以通过设置struts.convention.package.locators属性来修改这个配置-->
+    <constant name="struts.convention.package.locators" value="web,action"/>
+    <constant name="struts.objectFactory" value="spring"/>
+    <constant name="struts.configuration.xml.reload" value="true"/>
+    <constant name="struts.convention.package.locators" value="web,action" />
+   <!-- Convention通过如下规则确定URL的具体资源部分:去掉类名的Action部分。然后将将每个分部的首字母转为小写，用’-’分割，你可以设置struts.convention.action.name.separator-->
+    <constant name="struts.convention.action.name.separator" value="-" />
+    <package name="demo" extends="struts-default" namespace="/demo">
+        <global-results>
+            <result name="login">/index.jsp</result>
+            <result name="error">/error.jsp</result>
+        </global-results>
+    </package>
+    <!--http://www.cnblogs.com/fpjason/archive/2009/08/01/1536671.html-->
+</struts>

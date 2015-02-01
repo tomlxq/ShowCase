@@ -18,6 +18,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
         <module>springmvc-chapter7</module>
         <module>multi-language</module>
         <module>spring3</module>
+        <module>ssh</module>
 
     </modules>
 </project>
