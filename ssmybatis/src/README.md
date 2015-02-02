@@ -28,3 +28,5 @@ mvn archetype:create \
   -DarchetypeGroupId=org.apache.maven.archetypes \
   -DgroupId=com.tom.demo \
   -DartifactId=ssmybatis
+  参考
+http://pan.baidu.com/s/1o6kFgEY
