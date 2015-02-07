@@ -1,0 +1,11 @@
+ShowCase
+https://github.com/zhangkaitao/
+http://ll-feng.iteye.com/blog/1908511
+http://blog.csdn.net/wfung_kwok/article/details/7762142
+http://www.ibm.com/developerworks/cn/opensource/os-cn-spring-jpa/
+http://blog.sina.com.cn/s/blog_6353e75301018uqj.html
+http://sishuok.com/forum/posts/list/7000.html
+http://blog.csdn.net/yaerfeng/article/details/23744503
+http://blog.csdn.net/wfung_kwok/article/details/7762142
+http://my.oschina.net/u/140621/blog/276866
+http://www.blogjava.net/sxyx2008/archive/2010/11/02/336768.html

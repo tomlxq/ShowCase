@@ -21,6 +21,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
         <module>ssh</module>
         <module>ssmybatis</module>
         <module>plupload</module>
+        <module>springmvc-jpa-hibernate</module>
 
     </modules>
 </project>
