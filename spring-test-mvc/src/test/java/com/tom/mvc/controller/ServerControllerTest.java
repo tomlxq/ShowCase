@@ -28,11 +28,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.request;
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppContextSetup;
 
-/**
- * <p>User: Zhang Kaitao
- * <p>Date: 13-12-28
- * <p>Version: 1.0
- */
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration(value = "src/main/webapp")
 @ContextHierarchy({
@@ -182,9 +178,12 @@ public class ServerControllerTest {
     @Test
     public void test11() throws Exception {
         //异步测试
+        // 此处请在第一次请求时加上 andExpect(request().asyncResult(CoreMatchers.instanceOf(User.class)))这样会等待结果返回/超时，
+        // 无须自己设置线程等待了；此处注意request().asyncResult一定是在第一次请求发出；
+        // 然后第二次通过asyncDispatch进行异步请求
 
         //Callable
-        MvcResult result = mockMvc.perform(get("/user/async1?id=1&name=zhang")) //执行请求
+        MvcResult result = mockMvc.perform(get("/user/async1?id=1&name=tom")) //执行请求
                 .andExpect(request().asyncStarted())
                 .andExpect(request().asyncResult(CoreMatchers.instanceOf(User.class))) //默认会等10秒超时
                 .andReturn();
@@ -196,7 +195,7 @@ public class ServerControllerTest {
                 .andExpect(jsonPath("$.id").value(1));
 
         //DeferredResult
-        result = mockMvc.perform(get("/user/async2?id=1&name=zhang")) //执行请求
+        result = mockMvc.perform(get("/user/async2?id=1&name=tom")) //执行请求
                 .andExpect(request().asyncStarted())
                 .andExpect(request().asyncResult(CoreMatchers.instanceOf(User.class)))  //默认会等10秒超时
                 .andReturn();
@@ -208,7 +207,7 @@ public class ServerControllerTest {
                 .andExpect(jsonPath("$.id").value(1));
     }
 
-
+//添加自定义过滤器
     @Test
     public void test12() throws Exception {
         //Filter

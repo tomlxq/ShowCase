@@ -26,6 +26,8 @@
         <jsonpath.version>0.9.0</jsonpath.version>
 
         <xstream.version>1.4.4</xstream.version>
+        <jetty.version>8.1.8.v20121106</jetty.version>
+        <spring.boot.version>0.5.0.BUILD-SNAPSHOT</spring.boot.version>
     </properties>
 
     <dependencies>
@@ -96,7 +98,12 @@
             <version>${spring.version}</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring.boot.version}</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
@@ -114,9 +121,9 @@
             <artifactId>junit</artifactId>
             <version>4.11</version>
         </dependency>
-       <!-- JSON请求/响应验证
+        <!-- JSON请求/响应验证
 
-        测试时需要安装jackson Json和JsonPath依赖-->
+         测试时需要安装jackson Json和JsonPath依赖-->
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -144,6 +151,52 @@
             <version>${spring.version}</version>
             <scope>test</scope>
         </dependency>
-
+        <!--使用内嵌Jetty方式启动容器进行-->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>${jetty.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-webapp</artifactId>
+            <version>${jetty.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- 如果有jsp页面使用时 请打开这个 -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-jsp</artifactId>
+            <version>${jetty.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>0.5.0.BUILD-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>0.5.0.BUILD-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+    <build>
+        <finalName>springmvc</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.0</version>
+                <configuration>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
