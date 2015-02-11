@@ -23,6 +23,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
         <module>plupload</module>
         <module>springmvc-jpa-hibernate</module>
         <module>spring-test-mvc</module>
+        <module>spring-cache</module>
 
     </modules>
 </project>
