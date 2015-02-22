@@ -1,4 +1,15 @@
 package com.tom.spring.cache;
+
+
+import com.tom.spring.entity.User;
+import junit.framework.Assert;
+import org.junit.Test;
+import org.springframework.cache.Cache;
+import org.springframework.cache.ehcache.EhCacheCacheManager;
+import org.springframework.core.io.ClassPathResource;
+
+import java.io.IOException;
+
 /**
  * Created by Administrator on 15-2-11.
  */
@@ -15,7 +26,7 @@ public class SpringCacheTest {
         cacheCacheManager.setCacheManager(ehcacheManager);
 
         Long id = 1L;
-        User user = new User(id, "zhang", "zhang@gmail.com");
+        User user = new User(id, "tom", "tom@gmail.com");
 
         //根据缓存名字获取Cache
         Cache cache = cacheCacheManager.getCache("user");

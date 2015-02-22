@@ -12,7 +12,7 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-            classpath:spring-config.xml
+            classpath:spring-config.xml   <!--加载非web层组件-->
         </param-value>
     </context-param>
     <listener>
@@ -45,7 +45,7 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:spring-mvc.xml</param-value>
+            <param-value>classpath:spring-mvc.xml</param-value>  <!--加载和配置web层组件-->
         </init-param>
         <load-on-startup>1</load-on-startup>
         <async-supported>true</async-supported>
