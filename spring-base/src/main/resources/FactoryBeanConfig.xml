@@ -1,0 +1,11 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="helloWorldService" class="com.example.demo.FactoryBean与BeanFactory.HelloWorldServiceImpl">
+    </bean>
+    <bean id="fbHelloWorldService" class="com.example.demo.FactoryBean与BeanFactory.MyFactoryBean">
+        <property name="interfaceName" value="com.example.demo.FactoryBean与BeanFactory.HelloWorldService"/>
+        <property name="target" ref="helloWorldService"/>
+    </bean>
+</beans>
