@@ -27,5 +27,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
         <module>spring-data</module>
         <module>SSH_AngularJS_JQuery_Datatable_Bootstrap</module>
         <module>spring-base</module>
+        <module>spring-mvc-bymanual</module>
+        <module>spring-orm-bymanual</module>
     </modules>
 </project>

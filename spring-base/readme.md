@@ -105,13 +105,76 @@ public interface TransactionDefinition {
 } 
 ````
 
-## 事务的第一个方面是传播行为（propagation behavior）。当事务方法被另一个事务方法调用时，必须指定事务应该如何传播。例如：方法可能继续在现有事务中运行，也可能开启一个新事务，并在自己的事务中运行。Spring定义了七种传播行为：
 
-传播行为	含义
-PROPAGATION_REQUIRED	表示当前方法必须运行在事务中。如果当前事务存在，方法将会在该事务中运行。否则，会启动一个新的事务
-PROPAGATION_SUPPORTS	表示当前方法不需要事务上下文，但是如果存在当前事务的话，那么该方法会在这个事务中运行
-PROPAGATION_MANDATORY	表示该方法必须在事务中运行，如果当前事务不存在，则会抛出一个异常
-PROPAGATION_REQUIRED_NEW	表示当前方法必须运行在它自己的事务中。一个新的事务将被启动。如果存在当前事务，在该方法执行期间，当前事务会被挂起。如果使用JTATransactionManager的话，则需要访问TransactionManager
-PROPAGATION_NOT_SUPPORTED	表示该方法不应该运行在事务中。如果存在当前事务，在该方法运行期间，当前事务将被挂起。如果使用JTATransactionManager的话，则需要访问TransactionManager
-PROPAGATION_NEVER	表示当前方法不应该运行在事务上下文中。如果当前正有一个事务在运行，则会抛出异常
-PROPAGATION_NESTED	表示如果当前已经存在一个事务，那么该方法将会在嵌套事务中运行。嵌套的事务可以独立于当前事务进行单独地提交或回滚。如果当前事务不存在，那么其行为与PROPAGATION_REQUIRED一样。注意各厂商对这种传播行为的支持是有所差异的。可以参考资源管理器的文档来确认它们是否支持嵌套事务
+##隔离级别：
+    Read Uncommitted（读未提交）
+    Read Committed（读已提交）
+    Repeatable Read（可重复读）（MySQL默认隔离级别)
+    Serializable（串行化）
+    
+    脏读、不可重复读、幻读
+    脏读：一事务对数据进行了增删改,但未提交,有可能回滚,另一事务却读取了未提交的数据。
+    不可重复读: 一事务对数据进行了更新或删除操作,另一事务两次查询的数据不一致。 
+    幻读: 一事务对数据进行了新增操作,另一事务两次查询的数据不一致。
+    脏读：主要是针对列内容的变化。
+    幻读：主要是针对行数的变化
+
+##Spring事务管理 @Transacational
+    Isolation（隔离性）：
+        DEFAULT：  使用数据库设置
+        READ_UNCOMMITTED： 会出现脏读、不可重复读、幻读 
+        READ_COMMITTED： 会出现不可重复读、幻读问题
+        REPEATABLE_READ： 会出幻读
+        SERIALIZABLE： 保证所有的情况不会发生
+    propagation （传播性）：
+        requeired
+        supports
+        requried_new
+        not supported
+        mandatory
+        never
+        nested
+事务的第一个方面是传播行为（propagation behavior）。当事务方法被另一个事务方法调用时，必须指定事务应该如何传播。例如：方法可能继续在现有事务中运行，也可能开启一个新事务，并在自己的事务中运行。
+Spring定义了七种传播行为：
+
+    传播行为	含义
+    PROPAGATION_REQUIRED	表示当前方法必须运行在事务中。如果当前事务存在，方法将会在该事务中运行。否则，会启动一个新的事务
+    PROPAGATION_SUPPORTS	表示当前方法不需要事务上下文，但是如果存在当前事务的话，那么该方法会在这个事务中运行
+    PROPAGATION_MANDATORY	表示该方法必须在事务中运行，如果当前事务不存在，则会抛出一个异常
+    PROPAGATION_REQUIRED_NEW	表示当前方法必须运行在它自己的事务中。一个新的事务将被启动。如果存在当前事务，在该方法执行期间，当前事务会被挂起。如果使用JTATransactionManager的话，则需要访问TransactionManager
+    PROPAGATION_NOT_SUPPORTED	表示该方法不应该运行在事务中。如果存在当前事务，在该方法运行期间，当前事务将被挂起。如果使用JTATransactionManager的话，则需要访问TransactionManager
+    PROPAGATION_NEVER	表示当前方法不应该运行在事务上下文中。如果当前正有一个事务在运行，则会抛出异常
+    PROPAGATION_NESTED	表示如果当前已经存在一个事务，那么该方法将会在嵌套事务中运行。嵌套的事务可以独立于当前事务进行单独地提交或回滚。如果当前事务不存在，那么其行为与PROPAGATION_REQUIRED一样。注意各厂商对这种传播行为的支持是有所差异的。可以参考资源管理器的文档来确认它们是否支持嵌套事务
+
+##Spring分布式事务实现
+分布式事务是指操作多个数据库之间的事务
+spring的org.springframework.transaction.jta.JtaTransactionManager，提供了分布式事务支持。
+如果使用WAS的JTA支持，把它的属性改为WebSphere对应的TransactionManager。 
+在tomcat下，是没有分布式事务的，不过可以借助于第三方软件jotm（Java Open Transaction Manager ）和AtomikosTransactionsEssentials实现，在spring中分布式事务是通过jta（jotm，atomikos）来进行实现。
+Spring分布式事务实现
+http://blog.csdn.net/ithomer/article/details/10859235
+
+
+##一般分布式事务处理模式包括：
+	2阶段提交
+	3阶段提交
+	TCC（Try-Confirm-Cancel）
+	可靠消息（消息队列、数据库表）
+	SAGAS长事务
+	补偿性事务
+
+##duboo、spring cloud都可以算作是SOA框架
+分布式事务控制支持依赖其他组件
+
+	JTA（2阶段、3阶段）
+	ActiveMQ消息中间件
+	ByteTCC（TCC）
+zookeeper、redis可以支持分布式锁
+
+	redis对分布式锁的支持主要通过setnx，在使用redis分布式锁时候，一定要注意处理加锁客户端异常导致锁资源没有正常释放的情况（例如调用端down掉），在调用setnx时候需要加上对锁超时时间的判断。
+	zookeeper对分布式锁的支持可以直接使用zookeeper curator-recipes客户端
+
+##CAP（一致性、可用性、可靠性）
+    一致性(Consistency)
+    可用性(Availability)
+    分区宽容度(Partition-Tolerant))
