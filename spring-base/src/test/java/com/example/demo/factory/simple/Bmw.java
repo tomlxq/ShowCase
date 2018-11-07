@@ -1,8 +1,8 @@
 package com.example.demo.factory.simple;
 
-public class BWN implements Car {
+public class Bmw implements Car {
     @Override
     public String getName() {
-        return "BWN";
+        return "Bmw";
     }
 }
