@@ -20,5 +20,9 @@ public class TestPrototype {
         ConcretePrototype cp2 = (ConcretePrototype) cp.clone();
         logger.info("" +
                 "{} {} {} {}", cp3.hashCode(), cp.hashCode(), JSON.toJSONString(cp2), cp2.hashCode());
+
+
+        TheGreatestSage theGreatestSage = new TheGreatestSage();
+        theGreatestSage.change();
     }
 }
