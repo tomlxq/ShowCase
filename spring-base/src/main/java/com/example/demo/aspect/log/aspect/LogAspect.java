@@ -1,4 +1,4 @@
-package com.example.demo.aspect.aspect;
+package com.example.demo.aspect.log.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -17,7 +17,7 @@ public class LogAspect {
     /**
      * 定义一个切点
      */
-    @Pointcut("execution(* com.example.demo.aspect.service.impl..*(..))")
+    @Pointcut("execution(* com.example.demo.aspect.log.service.impl..*(..))")
     public void pointcut() {
     }
 
@@ -26,27 +26,26 @@ public class LogAspect {
      */
     @AfterReturning(pointcut = "pointcut()", returning = "name")
     void afterReturning(JoinPoint joinPoint, Object name) {
-        logger.debug("{}", name);
-        logger.debug("afterReturning");
+        logger.debug("afterReturning {} {}", name, joinPoint.getSignature().getName());
     }
 
     @Before("pointcut()")
     void before(JoinPoint joinPoint) {
-        logger.debug("before");
+        logger.debug("before {}", joinPoint.getSignature().getName());
     }
 
     @Around(value = "pointcut()")
     void around(JoinPoint joinPoint) {
-        logger.debug("Around");
+        logger.debug("Around {}", joinPoint.getSignature().getName());
     }
 
     @After(value = "pointcut()")
     void after(JoinPoint joinPoint) {
-        logger.debug("After");
+        logger.debug("After {}", joinPoint.getSignature().getName());
     }
 
     @AfterThrowing(value = "pointcut()")
     void afterThrowing(JoinPoint joinPoint) {
-        logger.debug("afterThrowing");
+        logger.debug("afterThrowing {}", joinPoint.getSignature().getName());
     }
 }

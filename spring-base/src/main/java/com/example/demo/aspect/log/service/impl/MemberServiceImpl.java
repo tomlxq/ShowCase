@@ -1,6 +1,6 @@
-package com.example.demo.aspect.service.impl;
+package com.example.demo.aspect.log.service.impl;
 
-import com.example.demo.aspect.service.MemberService;
+import com.example.demo.aspect.log.service.MemberService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -10,10 +10,10 @@ public class MemberServiceImpl implements MemberService {
     Logger logger = LoggerFactory.getLogger(MemberServiceImpl.class);
 
     @Override
-    public String addMember() throws Exception {
+    public String addMember() {
         logger.debug("add member");
-        throw new Exception("ddddddd");
-        //return "tom";
+        //throw new Exception("ddddddd");
+        return "tom";
     }
 
     @Override

@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Configuration
-@ComponentScan(basePackages = {"com.example.demo.aspect"})
+@ComponentScan(basePackages = {"com.example.demo.aspect.log"})
 @EnableAspectJAutoProxy//启用自动代理功能
-public class AppConfig {
+public class LogAppConfig {
 }

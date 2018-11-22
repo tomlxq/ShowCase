@@ -1,6 +1,6 @@
 package com.example.demo;
 
-import com.example.demo.aspect.service.MemberService;
+import com.example.demo.aspect.log.service.MemberService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {AppConfig.class})
+@ContextConfiguration(classes = {LogAppConfig.class})
 public class AspectTest {
     @Autowired
     public MemberService memberService;
@@ -20,6 +20,7 @@ public class AspectTest {
     @Test
     public void testAdd() throws Exception {
         String name = memberService.addMember();
+        memberService.delMember();
         logger.debug("{}", name);
     }
 }

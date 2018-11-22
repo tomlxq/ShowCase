@@ -1,4 +1,4 @@
-package com.example.demo.aspect.service;
+package com.example.demo.aspect.log.service;
 
 public interface MemberService {
     String addMember() throws Exception;
